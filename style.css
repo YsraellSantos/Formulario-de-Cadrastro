@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+   
+
+/*Fontes*/
+    :root{
+        --padraoo:  Verdana, Geneva, Tahoma, sans-serif; 
+        --priracha: 'Sriracha', cursive;
+    }
+
+    /*Cores*/
+:root{
+    --cor0: #4c6085;
+    --cor1: #399fed70;
+    --cor2: #eeeeee75;
+    --cor3: #32322c8a;
+    --cor4: #0e131f76;
+}  
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+     width: 100%; /* Altura da tela toda */
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color:var(--cor0);
+}
+
+.titulo{
+    font-family: var(--padraoo);
+    font-size: 40px;
+
+}
+
+.containe{
+    width: '80vh';
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    
+}
+
+.form-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--cor1);
+    padding: 2rem;
+}
+
+.form-img  img{
+    width: 28.8rem;
+}
+
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    background-color: aliceblue;
+}
+
+
+.form-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.loguin-button{
+    display: flex;
+    align-items: center;
+
+}
+
+.loguin-button button{
+    border: none;
+    background-color:var(--cor0);
+    padding: 0.4rem 3rem;
+    cursor: pointer;
+}
+
+.loguin-button button:hover{
+    background-image: linear-gradient(to left, #32322c8a, #399fed70,  #0e131f76 );
+}
+
+.loguin-button button a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--padraoo);
+    color: #fff;
+}
+
+.grup{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #000000c0;
+}
+
+.input-box input:hover{
+  background-color:var(--cor2);
+}
+
+
+/* Borda que fica por cima da borda dos campos input */
+.input-box input:focus-visible{
+    outline: 2px solid #6c63ff;
+}
+
+
+.input-box label,
+.gender-title h6{
+    font-size: 0.80rem ;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder{
+    color: #000000c0;
+    text-align: center;
+}
+
+
+.grup-esperiencia{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0 .5rem;
+}
+
+
